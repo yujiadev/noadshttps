@@ -1,0 +1,15 @@
+[package]
+name = "noadshttps"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+regex = "1.11.1"
+bytes = "1.10.1"
+tokio = { version = "1.44.2", features = ["full"] }
+rusqlite = { version = "0.34.0", features = ["bundled"] }
+toml = "0.8.16"
+serde = { version = "1.0", features = ["derive"]}
+tracing = "0.1.41"
+tracing-appender = "0.2.3"
+tracing-subscriber = { version = "0.3.19", features = ["time"] }

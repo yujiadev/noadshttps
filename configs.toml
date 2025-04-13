@@ -1,0 +1,15 @@
+# NoAdsHttpsProxy Configurations
+
+# Proxy's binding address
+address = "127.0.0.1:5000"
+
+# Proxy's forward address, another proxy is required to handle the traffic
+# e.g
+# x_forward_address = "192.168.1.12:7899"
+x_forward_address = "127.0.0.1:5000"
+
+# Path to SQLite3 database
+database_uri = "blocklist.db"
+
+# DNS blocklist
+blocklist = "hagezi_clean_domains.txt"
